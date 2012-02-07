@@ -1,8 +1,55 @@
-﻿<Window x:Class="KinectVideoRecorder.MainWindow"
+﻿<Window x:Class="Video_Kinect.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Video Kinect" Height="480" Width="840">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="220"/>
+        </Grid.ColumnDefinitions>
+        <Image Name="ColorImage" Grid.Row="0" Opacity="1" />
+        <StackPanel  Grid.Column="1" Margin="5">
+            <GroupBox Header="Device">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel>
+                        <TextBlock FontWeight="Bold" Margin="3">Model:</TextBlock>
+                        <ComboBox x:Name="UsageModelComboBox" Margin="3">
+                            <ComboBoxItem IsSelected="True">Event</ComboBoxItem>
+                            <ComboBoxItem>Polling</ComboBoxItem>
+                        </ComboBox>
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock FontWeight="Bold" Margin="3">Resolution:</TextBlock>
+                        <ComboBox x:Name="ResolutionComboBox" Margin="3">
+                            <ComboBoxItem IsSelected="True">640x480</ComboBoxItem>
+                            <ComboBoxItem>1280x1024</ComboBoxItem>
+                        </ComboBox>
+                    </StackPanel>
+                    <Button x:Name="ConnectButton" Click="ConnectButton_Click" 
+                      Margin="3">Connect</Button>
+                    <Button x:Name="DisconnectButton" IsEnabled="False" 
+                      Click="DisconnectButton_Click" 
+                      Margin="3">Disconnect</Button>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Camera" Margin="5">
+                <StackPanel>
+                    <TextBlock FontWeight="Bold" Margin="3">Name:</TextBlock>
+                    <TextBlock x:Name="CameraName" Margin="3"></TextBlock>
+                    <TextBlock FontWeight="Bold" Margin="3">Elevation Angle:</TextBlock>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox x:Name="CameraElevationAngle" Margin="3" Width="60"></TextBox>
+                        <Button x:Name="CameraElevationAngleButton" IsEnabled="False" 
+                          Click="CameraElevationAngleButton_Click">Set</Button>
+                    </StackPanel>
+                    <TextBlock FontWeight="Bold" Margin="3">Frame Number:</TextBlock>
+                    <TextBlock x:Name="FrameNumber" Margin="3"></TextBlock>
+                    <TextBlock FontWeight="Bold" Margin="3">FPS:</TextBlock>
+                    <TextBlock x:Name="FPS" Margin="3"></TextBlock>
+                    <Button x:Name="PollButton" IsEnabled="False" Click="PollButton_Click" 
+                      Margin="3">Poll</Button>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
     </Grid>
 </Window>

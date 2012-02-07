@@ -1,0 +1,9 @@
+C:\Users\Jeffrey\KinectVideoRecorder\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Jeffrey\KinectVideoRecorder\obj\x86\Debug\MainWindow.baml
+C:\Users\Jeffrey\KinectVideoRecorder\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Jeffrey\KinectVideoRecorder\obj\x86\Debug\App.g.cs
+C:\Users\Jeffrey\KinectVideoRecorder\obj\x86\Debug\KinectVideoRecorder_MarkupCompile.cache
+C:\Users\Jeffrey\KinectVideoRecorder\obj\x86\Debug\KinectVideoRecorder.g.resources
+C:\Users\Jeffrey\KinectVideoRecorder\obj\x86\Debug\KinectVideoRecorder.Properties.Resources.resources
+C:\Users\Jeffrey\KinectVideoRecorder\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Jeffrey\KinectVideoRecorder\obj\x86\Debug\GenerateResource.write.1.tlog
