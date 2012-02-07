@@ -1,0 +1,9 @@
+A C# 2010 program to get video streams from a connected Microsoft Kinect and save them to disk.
+
+Requires:
+Microsoft Visual C# 2010
+Microsoft Kinect
+Microsoft Kinect SDK 1.0b2 (or later)
+Windows Presentation Foundation (WPF) support, so you probably need Windows Vista or later to run it.
+
+Have fun with it. I may add support for video compression later, if I have time.
