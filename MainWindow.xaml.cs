@@ -11,7 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Microsoft.Research.Kinect.Nui;
+using Microsoft.Kinect;
 
 
 namespace KinectVideoRecorder
@@ -28,6 +28,11 @@ namespace KinectVideoRecorder
         {
             
             InitializeComponent();
+        }
+
+        private void ResolutionComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+        
         }
     }
 }

@@ -20,7 +20,7 @@
                     </StackPanel>
                     <StackPanel>
                         <TextBlock FontWeight="Bold" Margin="3">Resolution:</TextBlock>
-                        <ComboBox x:Name="ResolutionComboBox" Margin="3">
+                        <ComboBox x:Name="ResolutionComboBox" Margin="3" SelectionChanged="ResolutionComboBox_SelectionChanged">
                             <ComboBoxItem IsSelected="True">640x480</ComboBoxItem>
                             <ComboBoxItem>1280x1024</ComboBoxItem>
                         </ComboBox>
